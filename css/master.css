@@ -1,0 +1,248 @@
+/* Align elements to the center */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://images8.alphacoders.com/133/1339260.png); /*Image Credit: Google*/
+    background-size: cover;
+    background-position: center;
+}
+
+#content section {
+    text-align: center;
+    position: relative;
+}
+
+#main-title {
+    position: relative;
+    width: 1000px;
+    height: 620px;
+    bottom: 100px;
+    background-image: url(../img/main-title.png);
+    background-size: contain;
+    transition: transform .1s ease-in-out;
+    z-index: 1000;
+}
+
+#tutorial-screen {
+    position: absolute;
+    top: -200px;
+    color: #495057;
+    background-color: #f1faeef5;
+    border: solid 3px #CBC0D3;
+    padding: 25px;
+    border-radius: 1em;
+    font-size: 5em;
+    transition: all 0.3s ease;
+}
+
+#tutorial-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #675439;
+    background-color:rgba(212,189,165, 0.95);
+    border: solid 5px #675439;
+    padding: 25px;
+    border-radius: 1em;
+    font-size: 3em;
+    transition: all 0.3s ease;
+    z-index: 1001; /* Ensure the tutorial box appears on top of the button */
+    width: 100%;
+}
+
+#tutorial-screen h2 {
+    font-family: 'Avocade Bold', sans-serif;
+    font-size: 2em;
+}
+#tutorial-screen p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75em;
+    text-indent: 5px;
+}
+
+#tutorial-exit {
+    cursor: pointer;
+    position: absolute;
+    top: 2.5%;
+    right: 5%;
+    font-family: 'Avocade Bold', sans-serif;
+    font-size: 2em;
+    user-select: none;
+}
+
+#questions-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #675439;
+    border: solid 4px #675439;
+    padding: 15px;
+    border-radius: 1em;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+    z-index: 1001; /* Ensure the tutorial box appears on top of the button */
+    width: 100%; /* Adjusted the width to 60% of the viewport width */
+    background:rgba(212,189,165, 0.95);
+}
+
+#questions-screen h2 {
+    font-family: 'Avocade Bold', sans-serif;
+    font-size: 1.5em; /* Increased the font size */
+    margin-bottom: 20px; /* Added margin at the bottom for spacing */
+}
+
+#questions-screen button {
+    font-size: 1.5em; /* Increased the font size */
+    padding: 10px; /* Adjusted padding for better spacing */
+    width: 50%; /* Adjusted the width to 50% of the container */
+    margin: 10px; /* Added margin for spacing between buttons */
+    line-height: 1.5em; /* Adjusted line height for better spacing */
+}
+
+#results-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F1FAEE;
+    background: radial-gradient(farthest-side, #457B9D, #1D3557);
+    border: solid 2px #F1FAEE;
+    padding: 15px;
+    border-radius: 1em;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    width: 200%; /* Adjusted the width to 60% of the viewport width */
+}
+
+/* Button Appearance */
+
+/* Changes appearance for all buttons */
+button {
+    cursor: pointer;
+    font-family: 'Justy Three', sans-serif;
+    font-weight: bold;
+    border-radius: 1em;
+    color: white;
+    background-color: #d1cfe4;
+    border: solid 2px black;
+    box-shadow: 1px 2px 5px black;
+}
+
+/* Changes appearance of only the play button */
+#play {
+    width: 500px;
+    height: 113px;
+    position: fixed;
+    bottom: 38vh;
+    left: 91vh;
+    background-image: url(../img/play.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 1px 3px black);
+    transition: transform .1s ease-in-out;
+    z-index: 1000;
+}
+
+/* Changes appearance of only the tutorial button */
+
+#tutorial-button {
+    width: 590px;
+    height: 175px;
+    position: fixed;
+    bottom: 25vh;
+    left: 88.3vh;
+    background-image: url(../img/tutorial.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 1px 3px black);
+    transition: transform .1s ease-in-out;
+    z-index: 1000;
+}
+
+/* Positions setting icon to the bottom right */
+#menu div.icon {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+#menu-icon {
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh;
+    width: 350px;
+    height: 128px;
+    background-image: url(../img/menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 1px 3px #1D3557);
+    transition: transform .1s ease-in-out;
+    z-index: 1002;
+}
+
+/* Changes appearance of button when mouse hovers over it */
+.buttonHover {
+    text-shadow: 1px 1px 2px black;
+    transform: scale(1.2);
+}
+
+/* Simulates pressing the button */
+.buttonClick {
+    text-shadow: inset 0px 0px 10px black;
+    transform: scale(1);
+    user-select: none;
+}
+
+.iconHover {
+    text-shadow: 1px 1px 2px black;
+    transform: scale(1.2);
+}
+
+/* Simulates pressing the button */
+.iconClick {
+    text-shadow: inset 0px 0px 10px black;
+    transform: scale(1);
+    user-select: none;
+}
+
+/* A class to hide things */
+
+.hide {
+    visibility: hidden;
+}
+
+/* Loading Screen */
+
+#loading-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d3557cc;
+    z-index: 1005;
+}
+
+.loader {
+    border: 1em solid rgba(168, 218, 219, 0.5);
+    border-top: 1em solid #A8DADC;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

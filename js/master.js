@@ -176,7 +176,7 @@ const questions = [
       const question = questions[questionIndex].question;
       let newReply = randReply(questionIndex);
   
-      const outputText = isLeft ? `${question}<br>${newReply}` : `${newReply}<br>${question}`;
+      const outputText = isLeft ? `<b>${question}</b><br>${newReply}` : `${newReply}<br>${question}`;
       $("#output").append('<div class="text-' + (isLeft ? 'left' : 'right') + '"><p>' + outputText + '</p></div>');
       $("#output").append('<div style="clear:both;"></div>');
   

@@ -84,7 +84,7 @@ body {
     border: solid 4px #675439;
     padding: 15px;
     border-radius: 1em;
-    font-size: 1.5em;
+    font-size: 2em;
     transition: all 0.3s ease;
     z-index: 1001; /* Ensure the tutorial box appears on top of the button */
     width: 100%; /* Adjusted the width to 60% of the viewport width */

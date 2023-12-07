@@ -246,7 +246,7 @@ const questions = [
                 alert("Sorry, you lose. Better luck next time.");
             }
         }, 1000); // Adjust the delay duration as needed (1000 milliseconds or 1 second in this example)
-    }    
+    }
     });
   }
 

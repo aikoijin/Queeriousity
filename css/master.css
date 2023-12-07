@@ -8,6 +8,7 @@ body {
     background-image: url(https://images8.alphacoders.com/133/1339260.png); /*Image Credit: Google*/
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 #content section {
